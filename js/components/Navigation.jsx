@@ -6,19 +6,19 @@ class Navigation extends React.Component {
 	render() {
 		return (
 			<div id="navigation">
+				<span
+					id="home"
+					class="navigation-item nav-medium clickable margin-right"
+					onClick={() => {
+						ReactDOM.render(
+							<App />,
+							document.getElementById("root")
+						);
+					}}
+				>
+					Home
+				</span>
 				<div class="left">
-					<span
-						id="home"
-						class="navigation-item nav-medium clickable margin-right"
-						onClick={() => {
-							ReactDOM.render(
-								<App />,
-								document.getElementById("root")
-							);
-						}}
-					>
-						Home
-					</span>
 					{this.props.islandIndex == 0 ? (
 						""
 					) : (

@@ -5,6 +5,32 @@
 	--navigation-height: 60px;
 }
 
+@media (max-width: 1000px) {
+	:root {
+		--navigation-height: 120px;
+	}
+	#navigation {
+		grid-template-rows: auto auto auto auto;
+		grid-template-columns: auto !important;
+	}
+	#navigation .left {
+		justify-self: center;
+	}
+	#navigation .center {
+		justify-self: center;
+	}
+	#navigation .right {
+		justify-self: center;
+	}
+	.card {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	#home {
+		margin: 0px;
+	}
+}
+
 *,
 *::after,
 *::before {
@@ -71,7 +97,11 @@ a {
 		0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
 		0 32px 16px rgba(0, 0, 0, 0.09);
 	margin: 30px;
+	margin-bottom: 0;
 	padding: 30px;
+}
+.card:last-of-type {
+	margin-bottom: 30px;
 }
 
 .card img {
@@ -97,7 +127,7 @@ a {
 #navigation {
 	display: grid;
 	align-items: center;
-	grid-template-columns: auto 50px auto;
+	grid-template-columns: auto auto 50px auto;
 
 	width: 100vw;
 	height: var(--navigation-height);
@@ -188,4 +218,8 @@ th {
 #github img {
 	width: 35px;
 	height: 35px;
+}
+
+#home {
+	text-align: center;
 }
