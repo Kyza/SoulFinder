@@ -13,37 +13,7 @@ let data = {
 			video: "e2kHdywdJTY",
 			items: ["Grappling Hook", "Ender Pearl"],
 			description:
-				"Use a grappling hook or an ender pearl to get to the top of the bank."
-		},
-		"The Bank 2": {
-			coords: {
-				x: 5,
-				y: 5,
-				z: 5
-			},
-			video: "e2kHdywdJTY",
-			description:
-				"Use a grappling hook or an ender pearl to get to the top of The Bank 2."
-		},
-		"The Bank 3": {
-			coords: {
-				x: 5,
-				y: 5,
-				z: 5
-			},
-			video: "e2kHdywdJTY",
-			description:
-				"Use a grappling hook or an ender pearl to get to the top of The Bank 2."
-		},
-		"The Bank 4": {
-			coords: {
-				x: 5,
-				y: 5,
-				z: 5
-			},
-			video: "e2kHdywdJTY",
-			description:
-				"Use a grappling hook or an ender pearl to get to the top of The Bank 2."
+				"Use a grappling hook or an ender pearl to get to the top of The Bank."
 		}
 	},
 	"The Barn": {},

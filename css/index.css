@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
 
 :root {
-    --footer-height: 60px;
-    --navigation-height: 60px;
+	--footer-height: 60px;
+	--navigation-height: 60px;
 }
 
 *,
@@ -46,6 +46,7 @@ a {
 	display: grid;
 	grid-template-rows: auto var(--footer-height);
 	overflow: hidden;
+	height: 100vh;
 }
 
 #body > div {
@@ -55,14 +56,13 @@ a {
 }
 
 #body #islands {
-    grid-template-columns: repeat(auto-fill, minmax(calc(375px), 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(calc(375px), 1fr));
 }
 
 #body #souls {
-    grid-template-rows: 60px auto;
-    grid-template-columns: auto;
+	grid-template-rows: 60px auto;
+	grid-template-columns: auto;
 }
-
 
 .card {
 	display: grid;
@@ -75,8 +75,22 @@ a {
 	padding: 30px;
 }
 
-.card img, .card iframe {
+.card img {
 	max-width: 100%;
+}
+.card iframe {
+	margin: 0;
+}
+
+.card.soul {
+	display: block;
+	height: calc(
+		100vh - 60px - var(--navigation-height) - var(--footer-height)
+	) !important;
+	overflow-y: auto;
+}
+
+.soul iframe {
 }
 
 #navigation {
@@ -95,16 +109,16 @@ a {
 }
 
 .navigation-item {
-    margin-left: 5px;
-    margin-right: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .nav-medium {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 .clickable {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .margin-right {
@@ -142,4 +156,17 @@ footer {
 footer .right img {
 	width: 45px;
 	height: 45px;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td,
+th {
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	padding: 8px;
 }
