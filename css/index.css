@@ -146,17 +146,18 @@ footer {
 
 .left {
 	justify-self: start;
+	display: flex;
+	align-items: center;
 }
 .center {
 	justify-self: center;
+	display: flex;
+	align-items: center;
 }
 .right {
 	justify-self: end;
-}
-
-footer .right img {
-	width: 45px;
-	height: 45px;
+	display: flex;
+	align-items: center;
 }
 
 table {
@@ -170,4 +171,18 @@ th {
 	background-color: rgba(0, 0, 0, 0.4);
 	text-align: center;
 	padding: 8px;
+}
+
+.social {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.social img {
+	width: 45px;
+	height: 45px;
+}
+
+#github img {
+	width: 35px;
+	height: 35px;
 }
