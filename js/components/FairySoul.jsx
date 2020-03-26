@@ -12,6 +12,16 @@ class FairySoul extends React.Component {
 				) : (
 					""
 				)}
+				<table>
+					<tr>
+						<th colspan="3">Coordinates</th>
+					</tr>
+					<tr>
+						<td>{this.props.fairySoulData.coords.x}</td>
+						<td>{this.props.fairySoulData.coords.y}</td>
+						<td>{this.props.fairySoulData.coords.z}</td>
+					</tr>
+				</table>
 				{this.props.fairySoulData.items ? (
 					<table>
 						<tr>

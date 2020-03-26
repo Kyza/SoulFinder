@@ -90,13 +90,15 @@ a {
 	overflow-y: auto;
 }
 
-.soul iframe {
+.card.soul table {
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
 
 #navigation {
 	display: grid;
 	align-items: center;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: auto 50px auto;
 
 	width: 100vw;
 	height: var(--navigation-height);

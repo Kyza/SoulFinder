@@ -9,14 +9,18 @@ class FairySouls extends React.Component {
 		this.state.islandIndex = Object.keys(data).indexOf(
 			this.state.islandName
 		);
-		this.props.islandCount = Object.keys(data).length;
 
 		this.state.fairySoulName = Object.keys(data[this.state.islandName])[
 			this.state.fairySoulIndex
 		];
-		this.props.fairySoulCount = Object.keys(
+
+		this.props.islandCount = Object.keys(data).length;
+		this.state.fairySoulCount = Object.keys(
 			data[this.state.islandName]
 		).length;
+
+		this.state.fairySoulData =
+			data[this.props.islandName][this.state.fairySoulName];
 	}
 
 	setIsland = index => {
@@ -26,6 +30,9 @@ class FairySouls extends React.Component {
 				islandName: Object.keys(data)[index]
 			})
 		]).then(() => {
+			this.setState({
+				fairySoulCount: Object.keys(data[this.state.islandName]).length
+			});
 			this.setFairySoul(0);
 		});
 	};
@@ -42,6 +49,12 @@ class FairySouls extends React.Component {
 		this.setState({ fairySoulIndex: index });
 		this.setState({
 			fairySoulName: Object.keys(data[this.state.islandName])[index]
+		});
+		this.setState({
+			fairySoulData:
+				data[this.state.islandName][
+					Object.keys(data[this.state.islandName])[index]
+				]
 		});
 	};
 
@@ -62,21 +75,15 @@ class FairySouls extends React.Component {
 					previousFairySoul={this.previousFairySoul}
 					nextFairySoul={this.nextFairySoul}
 					islandIndex={this.state.islandIndex}
-					islandCount={this.state.islandCount}
+					islandCount={this.props.islandCount}
 					islandName={this.state.islandName}
 					fairySoulIndex={this.state.fairySoulIndex}
-					fairySoulCount={this.props.fairySoulCount}
+					fairySoulCount={this.state.fairySoulCount}
 					fairySoulName={this.state.fairySoulName}
-					fairySoulData={
-						data[this.props.islandName][this.state.fairySoulName]
-					}
 				/>
 				<FairySoul
-					islandName={this.state.islandName}
 					fairySoulName={this.state.fairySoulName}
-					fairySoulData={
-						data[this.props.islandName][this.state.fairySoulName]
-					}
+					fairySoulData={this.state.fairySoulData}
 				/>
 			</div>
 		);

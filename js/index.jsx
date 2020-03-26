@@ -14,7 +14,17 @@ let data = {
 			items: ["Grappling Hook", "Ender Pearl"],
 			description:
 				"Use a grappling hook or an ender pearl to get to the top of The Bank."
-		}
+		},
+		"The Mayor's House": {
+			coords: {
+				x: 0,
+				y: 0,
+				z: 0
+			},
+			video: "e2kHdywdJTY",
+			description:
+				"Behind the flames in the fireplace."
+		},
 	},
 	"The Barn": {},
 	"Mushroom Desert": {},
