@@ -2,8 +2,6 @@ String.prototype.replaceAll = function(search, replacement) {
 	return this.split(search).join(replacement);
 };
 
-document.getElementById("clear").remove();
-
 let data = {
 	"The Hub": {
 		"The Bank": {
