@@ -25,6 +25,10 @@
 	.card {
 		margin-left: 0 !important;
 		margin-right: 0 !important;
+		margin-bottom: 0 !important;
+	}
+	.card:last-of-type {
+		margin-bottom: 30px !important;
 	}
 	#home {
 		margin: 0px;
@@ -97,11 +101,7 @@ a {
 		0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
 		0 32px 16px rgba(0, 0, 0, 0.09);
 	margin: 30px;
-	margin-bottom: 0;
 	padding: 30px;
-}
-.card:last-of-type {
-	margin-bottom: 30px;
 }
 
 .card img {
