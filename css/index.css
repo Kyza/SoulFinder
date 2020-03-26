@@ -127,7 +127,7 @@ a {
 #navigation {
 	display: grid;
 	align-items: center;
-	grid-template-columns: auto auto 50px auto;
+	grid-template-columns: 100px auto 50px auto;
 
 	width: 100vw;
 	height: var(--navigation-height);
