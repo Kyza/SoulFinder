@@ -107,6 +107,10 @@ a {
     cursor: pointer;
 }
 
+.margin-right {
+	margin-right: 30px;
+}
+
 footer {
 	display: grid;
 	align-items: center;

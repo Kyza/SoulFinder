@@ -8,6 +8,18 @@ class Navigation extends React.Component {
 			<div id="navigation">
 				<div class="left">
 					<span
+						id="home"
+						class="navigation-item nav-medium clickable margin-right"
+						onClick={() => {
+							ReactDOM.render(
+								<Islands />,
+								document.getElementById("body")
+							);
+						}}
+					>
+						Home
+					</span>
+					<span
 						id="island-previous"
 						class="navigation-item clickable"
 					>
