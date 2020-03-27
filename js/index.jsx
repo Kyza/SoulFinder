@@ -10,7 +10,6 @@ let data = {
 				y: 0,
 				z: 0
 			},
-			video: "e2kHdywdJTY",
 			items: ["Grappling Hook", "Ender Pearl"],
 			description:
 				"Use a grappling hook or an ender pearl to get to the top of The Bank."
@@ -21,7 +20,6 @@ let data = {
 				y: 0,
 				z: 0
 			},
-			video: "e2kHdywdJTY",
 			description: "Behind the flames in the fireplace."
 		}
 	},

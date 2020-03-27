@@ -38,12 +38,13 @@ class FairySoul extends React.Component {
 				) : (
 					""
 				)}
+				{this.props.fairySoulData.video ? (
 				<iframe
 					src={`https://www.youtube-nocookie.com/embed/${this.props.fairySoulData.video}?controls=0&autoplay=1&color=white&disablekb=1&loop=1&fs=0&modestbranding=1&showinfo=0&mute=1`}
 					frameborder="0"
 					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen
-				></iframe>
+				></iframe>) : (<h2>Video coming soon...</h2>)}
 			</div>
 		) : (
 			""
