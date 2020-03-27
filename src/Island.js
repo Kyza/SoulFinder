@@ -1,31 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Footer from "./Footer";
-import FairySouls from "./FairySouls";
 
 function Island(props) {
 	return (
 		<div
 			className="card island clickable"
 			onClick={() => {
-				ReactDOM.render(
-					<React.Fragment>
-						<FairySouls
-							islandName={props.islandName}
-							fairySouls={props.fairySouls}
-						/>
-						<Footer />
-					</React.Fragment>,
-					document.getElementById("body")
-				);
+				props.setIsland(props.thisIslandName);
+				props.setPage(props.thisIslandName);
 			}}
 		>
-			<h1>{props.islandName}</h1>
+			<h1>{props.thisIslandName}</h1>
 			<img
-				src={`./${props.islandName
+				src={`./${props.thisIslandName
 					.toLowerCase()
 					.replaceAll(" ", "-")}.png`}
-				alt={props.islandName + " Image"}
+				alt={props.thisIslandName + " Image"}
 			/>
 		</div>
 	);

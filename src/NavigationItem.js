@@ -25,7 +25,10 @@ function NavigationItem(props) {
 							: ""
 					}`}
 					onClick={() => {
-						props.setFairySoul(props.fairySoulIndex);
+						props.setFairySoul(
+							props.islandName,
+							props.fairySoulIndex
+						);
 					}}
 				>
 					<span>{props.fairySoulName}</span>

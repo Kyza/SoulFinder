@@ -4,12 +4,16 @@ import { Trail } from "react-spring/renderprops";
 import Island from "./Island";
 import data from "./data.json";
 
-function Islands() {
-	const islands = Object.keys(data).map((islandName, index) => (
+function Islands(props) {
+	const islands = Object.keys(data).map((thisIslandName, index) => (
 		<Island
 			key={"islands-" + index}
-			islandName={islandName}
-			fairySouls={data[islandName]}
+			setIsland={props.setIsland}
+			islandName={props.islandName}
+			thisIslandName={thisIslandName}
+			setFairySoul={props.setFairySoul}
+			fairySouls={data[thisIslandName]}
+			setPage={props.setPage}
 		/>
 	));
 	return (

@@ -1,9 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { animated } from "react-spring";
 import { Spring, Trail } from "react-spring/renderprops";
-import Islands from "./Islands";
-import Footer from "./Footer";
 import NavigationItem from "./NavigationItem";
 
 function Navigation(props) {
@@ -12,13 +9,7 @@ function Navigation(props) {
 			id="home"
 			className="navigation-item clickable"
 			onClick={() => {
-				ReactDOM.render(
-					<React.Fragment>
-						<Islands />
-						<Footer />
-					</React.Fragment>,
-					document.getElementById("body")
-				);
+				props.setPage("islands");
 			}}
 		>
 			Home
@@ -27,6 +18,7 @@ function Navigation(props) {
 			<NavigationItem
 				key={"navigation-" + index}
 				fairySoulName={fairySoul}
+				islandName={props.islandName}
 				setFairySoul={props.setFairySoul}
 				fairySoulIndex={index}
 				fairySoulSelected={props.fairySoulIndex}
