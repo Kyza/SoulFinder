@@ -1,5 +1,4 @@
 import React from "react";
-import { animated } from "react-spring";
 import { Spring } from "react-spring/renderprops";
 
 function FairySoul(props) {
@@ -83,4 +82,4 @@ function FairySoul(props) {
 	);
 }
 
-export default animated(FairySoul);
+export default FairySoul;

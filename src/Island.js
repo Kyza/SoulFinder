@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { animated } from "react-spring";
+import Background from "./Background";
 import Footer from "./Footer";
 import FairySouls from "./FairySouls";
 
@@ -11,6 +11,7 @@ function Island(props) {
 			onClick={() => {
 				ReactDOM.render(
 					<React.Fragment>
+						<Background />
 						<FairySouls
 							islandName={props.islandName}
 							fairySouls={props.fairySouls}
@@ -32,4 +33,4 @@ function Island(props) {
 	);
 }
 
-export default animated(Island);
+export default Island;

@@ -46,7 +46,6 @@ body {
 }
 
 body {
-	background-image: url(./background.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -60,8 +59,14 @@ a {
 	cursor: pointer;
 }
 
+#background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	filter: blur(4px);
+}
+
 #root {
-	backdrop-filter: blur(2px);
 	display: grid;
 	grid-template-rows: auto var(--footer-height);
 	overflow: hidden;
@@ -78,7 +83,7 @@ a {
 #souls {
 	display: grid;
 	height: calc(100vh - var(--footer-height));
-	overflow: auto;
+	overflow: hidden;
 	grid-template-columns: 375px auto;
 }
 
