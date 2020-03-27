@@ -46,7 +46,7 @@ body {
 }
 
 body {
-	background-image: url(../images/background.png);
+	background-image: url(./background.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -125,7 +125,8 @@ table {
 		4px 0 4px rgba(0, 0, 0, 0.12), 8px 0 8px rgba(0, 0, 0, 0.12),
 		16px 0 16px rgba(0, 0, 0, 0.12);
 	background-color: rgb(0, 0, 0, 0.4);
-	overflow-y: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .navigation-item {
@@ -135,9 +136,9 @@ table {
 	align-content: center;
 }
 
-.navigation-selected {
+/* .navigation-selected {
 	background-color: rgba(0, 50, 100, 0.4);
-}
+} */
 
 .clickable {
 	cursor: pointer;

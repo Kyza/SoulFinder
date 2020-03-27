@@ -1,3 +1,8 @@
+import React from "react";
+import Navigation from "./Navigation";
+import FairySoul from "./FairySoul";
+import data from "./data.json";
+
 class FairySouls extends React.Component {
 	constructor(props) {
 		super(props);
@@ -49,3 +54,5 @@ class FairySouls extends React.Component {
 		);
 	}
 }
+
+export default FairySouls;
