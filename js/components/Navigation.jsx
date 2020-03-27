@@ -23,6 +23,7 @@ class Navigation extends React.Component {
 						fairySoulName={fairySoul}
 						setFairySoul={this.props.setFairySoul}
 						fairySoulIndex={index}
+						fairySoulSelected={this.props.fairySoulIndex}
 					/>
 				))}
 			</div>

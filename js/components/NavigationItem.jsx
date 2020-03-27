@@ -6,12 +6,12 @@ class NavigationItem extends React.Component {
 	render() {
 		return (
 			<div
-				class="navigation-item clickable"
+				class={`navigation-item clickable${this.props.fairySoulSelected == this.props.fairySoulIndex ? " navigation-selected" : ""}`}
 				onClick={() => {
 					this.props.setFairySoul(this.props.fairySoulIndex);
 				}}
 			>
-				{this.props.fairySoulName}
+				<span>{this.props.fairySoulName}</span>
 			</div>
 		);
 	}

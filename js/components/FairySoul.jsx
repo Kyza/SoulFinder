@@ -12,21 +12,11 @@ class FairySoul extends React.Component {
 				) : (
 					""
 				)}
-				<table>
-					<tr>
-						<th colspan="3">Coordinates</th>
-					</tr>
-					<tr>
-						<td>{this.props.fairySoulData.coords.x}</td>
-						<td>{this.props.fairySoulData.coords.y}</td>
-						<td>{this.props.fairySoulData.coords.z}</td>
-					</tr>
-				</table>
 				{this.props.fairySoulData.items ? (
 					<table>
 						<tr>
 							<th colspan={this.props.fairySoulData.items.length}>
-								Items Needed
+								One Item Needed
 							</th>
 						</tr>
 						<tr>
@@ -38,13 +28,26 @@ class FairySoul extends React.Component {
 				) : (
 					""
 				)}
+				<table>
+					<tr>
+						<th colspan="3">Coordinates (X Y Z)</th>
+					</tr>
+					<tr>
+						<td>{this.props.fairySoulData.coords.x}</td>
+						<td>{this.props.fairySoulData.coords.y}</td>
+						<td>{this.props.fairySoulData.coords.z}</td>
+					</tr>
+				</table>
 				{this.props.fairySoulData.video ? (
-				<iframe
-					src={`https://www.youtube-nocookie.com/embed/${this.props.fairySoulData.video}?controls=0&autoplay=1&color=white&disablekb=1&loop=1&fs=0&modestbranding=1&showinfo=0&mute=1`}
-					frameborder="0"
-					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen
-				></iframe>) : (<h2>Video coming soon...</h2>)}
+					<iframe
+						src={`https://www.youtube-nocookie.com/embed/${this.props.fairySoulData.video}?controls=0&autoplay=1&color=white&disablekb=1&loop=1&fs=0&modestbranding=1&showinfo=0&mute=1`}
+						frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				) : (
+					<h2>Video coming soon...</h2>
+				)}
 			</div>
 		) : (
 			""
