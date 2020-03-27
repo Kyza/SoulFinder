@@ -2,26 +2,9 @@
 
 :root {
 	--footer-height: 60px;
-	--navigation-height: 60px;
 }
 
 @media (max-width: 1000px) {
-	:root {
-		--navigation-height: 120px;
-	}
-	#navigation {
-		grid-template-rows: auto auto auto auto;
-		grid-template-columns: auto !important;
-	}
-	#navigation .left {
-		justify-self: center;
-	}
-	#navigation .center {
-		justify-self: center;
-	}
-	#navigation .right {
-		justify-self: center;
-	}
 	.card {
 		margin-left: 0 !important;
 		margin-right: 0 !important;
@@ -85,19 +68,18 @@ a {
 	height: 100vh;
 }
 
-#body > div {
+#islands {
 	display: grid;
 	height: calc(100vh - var(--footer-height));
 	overflow: auto;
+	grid-template-columns: repeat(auto-fit, minmax(calc(375px), 1fr));
 }
 
-#body #islands {
-	grid-template-columns: repeat(auto-fill, minmax(calc(375px), 1fr));
-}
-
-#body #souls {
-	grid-template-rows: 60px auto;
-	grid-template-columns: auto;
+#souls {
+	display: grid;
+	height: calc(100vh - var(--footer-height));
+	overflow: auto;
+	grid-template-columns: 375px auto;
 }
 
 .card {
@@ -133,11 +115,11 @@ a {
 
 #navigation {
 	display: grid;
-	align-items: center;
-	grid-template-columns: 100px auto 50px auto;
+	grid-row-gap: 10px;
+	grid-template-rows: repeat(auto-fill, minmax(24px, 1fr));
 
-	width: 100vw;
-	height: var(--navigation-height);
+	width: 100%;
+	height: 100%;
 	padding-left: 20px;
 	padding-right: 20px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
@@ -147,20 +129,11 @@ a {
 }
 
 .navigation-item {
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-.nav-medium {
 	font-size: 24px;
 }
 
 .clickable {
 	cursor: pointer;
-}
-
-.margin-right {
-	margin-right: 30px;
 }
 
 footer {
@@ -225,8 +198,4 @@ th {
 #github img {
 	width: 35px;
 	height: 35px;
-}
-
-#home {
-	text-align: center;
 }
