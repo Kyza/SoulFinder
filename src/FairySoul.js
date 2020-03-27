@@ -1,5 +1,6 @@
 import React from "react";
 import { Spring } from "react-spring/renderprops";
+import Checkbox from "./Checkbox";
 
 function FairySoul(props) {
 	return props.fairySoulData ? (
@@ -16,7 +17,7 @@ function FairySoul(props) {
 		>
 			{spring => (
 				<div style={spring} className="card soul">
-					<h1>{props.fairySoulName}</h1>
+					<Checkbox text={props.fairySoulName} />
 					{props.fairySoulData.description ? (
 						<p>{props.fairySoulData.description}</p>
 					) : (
