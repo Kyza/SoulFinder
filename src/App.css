@@ -66,12 +66,13 @@ a {
 	width: 100vw;
 	height: 100vh;
 	filter: blur(4px);
+	z-index: 0;
 }
 
 #body {
 	display: grid;
 	grid-template-rows: auto var(--footer-height);
-	overflow: hidden;
+	overflow-x: hidden;
 	height: 100vh;
 }
 
@@ -80,6 +81,7 @@ a {
 	height: calc(100vh - var(--footer-height));
 	overflow: auto;
 	grid-template-columns: repeat(auto-fit, minmax(calc(375px), 1fr));
+	z-index: 1;
 }
 
 #souls {
@@ -87,6 +89,7 @@ a {
 	height: calc(100vh - var(--footer-height));
 	overflow: hidden;
 	grid-template-columns: 375px auto;
+	z-index: 1;
 }
 
 .card {
@@ -132,8 +135,8 @@ table {
 		4px 0 4px rgba(0, 0, 0, 0.12), 8px 0 8px rgba(0, 0, 0, 0.12),
 		16px 0 16px rgba(0, 0, 0, 0.12);
 	background-color: rgb(0, 0, 0, 0.4);
-  overflow-y: auto;
-  overflow-x: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .navigation-item {
@@ -213,4 +216,15 @@ th {
 #github img {
 	width: 35px;
 	height: 35px;
+}
+
+::-webkit-scrollbar {
+	width: 1em;
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.4);
 }
