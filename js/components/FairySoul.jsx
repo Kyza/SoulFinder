@@ -12,6 +12,16 @@ class FairySoul extends React.Component {
 				) : (
 					""
 				)}
+				<table>
+					<tr>
+						<th colspan="3">Coordinates (X Y Z)</th>
+					</tr>
+					<tr>
+						<td>{this.props.fairySoulData.coords.x}</td>
+						<td>{this.props.fairySoulData.coords.y}</td>
+						<td>{this.props.fairySoulData.coords.z}</td>
+					</tr>
+				</table>
 				{this.props.fairySoulData.items ? (
 					<table>
 						<tr>
@@ -28,16 +38,7 @@ class FairySoul extends React.Component {
 				) : (
 					""
 				)}
-				<table>
-					<tr>
-						<th colspan="3">Coordinates (X Y Z)</th>
-					</tr>
-					<tr>
-						<td>{this.props.fairySoulData.coords.x}</td>
-						<td>{this.props.fairySoulData.coords.y}</td>
-						<td>{this.props.fairySoulData.coords.z}</td>
-					</tr>
-				</table>
+
 				{this.props.fairySoulData.video ? (
 					<iframe
 						src={`https://www.youtube-nocookie.com/embed/${this.props.fairySoulData.video}?controls=0&autoplay=1&color=white&disablekb=1&loop=1&fs=0&modestbranding=1&showinfo=0&mute=1`}

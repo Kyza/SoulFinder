@@ -12,7 +12,7 @@ let data = {
 			},
 			items: ["Grappling Hook", "Ender Pearl"],
 			description:
-				"Use a grappling hook or an ender pearl to get to the top of The Bank."
+				"Near the top of the gold pile on top of the bank."
 		},
 		"The Mayor's House": {
 			coords: {
