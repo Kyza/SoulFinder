@@ -25,13 +25,20 @@
 	.card {
 		margin-left: 0 !important;
 		margin-right: 0 !important;
-		margin-bottom: 0 !important;
 	}
 	.card:last-of-type {
 		margin-bottom: 30px !important;
 	}
 	#home {
 		margin: 0px;
+	}
+}
+@media (max-width: calc(766px)) {
+	.card {
+		margin-bottom: 0 !important;
+	}
+	.card:last-of-type {
+		margin-bottom: 30px !important;
 	}
 }
 
