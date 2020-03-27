@@ -45,7 +45,7 @@ function FairySoul(props) {
 											props.fairySoulData.items.length
 										}
 									>
-										One Item Needed
+										Items/Effects Needed
 									</th>
 								</tr>
 							</thead>
