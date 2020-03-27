@@ -5,7 +5,7 @@ String.prototype.replaceAll = function(search, replacement) {
 };
 
 function Background(props) {
-	return <img id="background" src="./background.png" />;
+	return <img id="background" src="./background.png" alt="Background Image" />;
 }
 
 export default Background;

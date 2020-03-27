@@ -15,7 +15,7 @@ function Islands() {
 	return (
 		<div id="islands">
 			<Trail
-			config={{ tension: 350, friction: 35 }}
+			config={{ tension: 450, friction: 35 }}
 			items={islands}
 				from={{
 					transform: "translateY(-5%)",
