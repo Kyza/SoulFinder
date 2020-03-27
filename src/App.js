@@ -13,8 +13,10 @@ function App(props) {
 	return (
 		<React.Fragment>
 			<Background />
-			<Islands />
-			<Footer />
+			<div id="body">
+				<Islands />
+				<Footer />
+			</div>
 		</React.Fragment>
 	);
 }

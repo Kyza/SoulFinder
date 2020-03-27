@@ -7,7 +7,7 @@ import data from "./data.json";
 function Islands() {
 	const islands = Object.keys(data).map((islandName, index) => (
 		<Island
-			key={index}
+			key={"islands-" + index}
 			islandName={islandName}
 			fairySouls={data[islandName]}
 		/>
@@ -15,8 +15,9 @@ function Islands() {
 	return (
 		<div id="islands">
 			<Trail
-			config={{ tension: 450, friction: 35 }}
-			items={islands}
+				keys={item => item.key}
+				config={{ tension: 450, friction: 35 }}
+				items={islands}
 				from={{
 					transform: "translateY(-5%)",
 					opacity: 0

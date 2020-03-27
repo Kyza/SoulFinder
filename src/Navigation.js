@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { animated } from "react-spring";
 import { Spring, Trail } from "react-spring/renderprops";
-import App from "./App";
+import Islands from "./Islands";
+import Footer from "./Footer";
 import NavigationItem from "./NavigationItem";
 
 function Navigation(props) {
@@ -11,14 +12,20 @@ function Navigation(props) {
 			id="home"
 			className="navigation-item clickable"
 			onClick={() => {
-				ReactDOM.render(<App />, document.getElementById("root"));
+				ReactDOM.render(
+					<React.Fragment>
+						<Islands />
+						<Footer />
+					</React.Fragment>,
+					document.getElementById("body")
+				);
 			}}
 		>
 			Home
 		</div>,
 		...props.fairySouls.map((fairySoul, index) => (
 			<NavigationItem
-				key={index}
+				key={"navigation-" + index}
 				fairySoulName={fairySoul}
 				setFairySoul={props.setFairySoul}
 				fairySoulIndex={index}
@@ -34,6 +41,7 @@ function Navigation(props) {
 			{spring => (
 				<div style={spring} id="navigation">
 					<Trail
+						keys={item => item.key}
 						config={{ tension: 170, friction: 18 }}
 						items={fairySouls}
 						from={{

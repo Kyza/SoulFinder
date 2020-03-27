@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Background from "./Background";
 import Footer from "./Footer";
 import FairySouls from "./FairySouls";
 
@@ -11,14 +10,13 @@ function Island(props) {
 			onClick={() => {
 				ReactDOM.render(
 					<React.Fragment>
-						<Background />
 						<FairySouls
 							islandName={props.islandName}
 							fairySouls={props.fairySouls}
 						/>
 						<Footer />
 					</React.Fragment>,
-					document.getElementById("root")
+					document.getElementById("body")
 				);
 			}}
 		>

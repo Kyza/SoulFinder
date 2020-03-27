@@ -61,12 +61,14 @@ a {
 
 #background {
 	position: absolute;
+	top: 0px;
+	left: 0px;
 	width: 100vw;
 	height: 100vh;
 	filter: blur(4px);
 }
 
-#root {
+#body {
 	display: grid;
 	grid-template-rows: auto var(--footer-height);
 	overflow: hidden;
