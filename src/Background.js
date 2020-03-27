@@ -4,8 +4,8 @@ import { Spring } from "react-spring/renderprops";
 function Background(props) {
 	return (
 		<Spring
-			config={{ friction: 0, mass: 100 }}
-			from={{ transform: "translateY(-25px)" }}
+			config={{ friction: 0, mass: 200 }}
+			from={{ transform: "translateY(-10px)" }}
 			to={{ transform: "translateY(0)" }}
 		>
 			{spring => (
