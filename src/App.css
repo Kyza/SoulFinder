@@ -220,7 +220,7 @@ th {
 
 .checkbox-box {
 	display: inline-block;
-	border: 5px solid rgba(0, 50, 100, 0.4);
+	border: 5px solid rgba(0, 50, 100, 0.6);
 	border-radius: 5px;
 	width: 40px;
 	height: 40px;
@@ -235,7 +235,7 @@ th {
 	transform-origin: center;
 	margin: 0px;
 	border-radius: 5px;
-	background-color: rgba(0, 50, 100, 0.4);
+	background-color: rgba(0, 50, 100, 0.6);
 }
 
 ::-webkit-scrollbar {
