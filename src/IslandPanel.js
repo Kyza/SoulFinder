@@ -1,15 +1,12 @@
 import React from "react";
 import data from "./data.json";
 import {
-	BrowserRouter as Router,
 	Switch,
 	Route,
-	Link,
 	Redirect,
 	matchPath
 } from "react-router-dom";
 import FairySoulCard from "./FairySoulCard";
-import PageNotFound from "./PageNotFound";
 import Navigation from "./Navigation";
 import "./css/IslandPanel.css";
 
@@ -31,7 +28,7 @@ class IslandPanel extends React.Component {
 			const fairySoulID = match.fairySoulID;
 
 			for (let i = 0; i < data.islands.length; i++) {
-				if (data.islands[i].id == islandID) {
+				if (data.islands[i].id === islandID) {
 					for (
 						let j = 0;
 						j < data.islands[i].fairySouls.length;
@@ -110,7 +107,6 @@ class IslandPanel extends React.Component {
 								completedFairySouls={
 									this.state.completedFairySouls
 								}
-								fairySoul={fairySoul}
 							/>
 						</Route>
 					))}
