@@ -1,76 +1,67 @@
 import React from "react";
-import { animated } from "react-spring";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Background from "./Background";
-import Islands from "./Islands";
-import FairySouls from "./FairySouls";
+import HomePanel from "./HomePanel";
+import IslandPanel from "./IslandPanel";
 import Footer from "./Footer";
-import "./App.css";
+import PageNotFound from "./PageNotFound";
+import "./css/App.css";
+import "./css/Link.css";
 import data from "./data.json";
 
-String.prototype.replaceAll = function(search, replacement) {
-	return this.split(search).join(replacement);
-};
-
-function App(props) {
-	const [islandName, setIslandName] = React.useState(Object.keys(data)[0]);
-
-	const [fairySoulIndex, setFairySoulIndex] = React.useState(0);
-
-	const [fairySoulName, setFairySoulName] = React.useState(
-		Object.keys(data[islandName])[fairySoulIndex]
-	);
-
-	const [fairySoulCount] = React.useState(
-		Object.keys(data[islandName]).length
-	);
-
-	const [fairySoulData, setFairySoulData] = React.useState(
-		data[islandName][fairySoulName]
-	);
-
-	const setFairySoul = (island, index) => {
-		setFairySoulIndex(index);
-		setFairySoulName(Object.keys(data[island])[index]);
-		setFairySoulData(
-			data[island][Object.keys(data[island])[index]]
-		);
-	};
-
-	const setIsland = name => {
-		setIslandName(name);
-		setFairySoul(name, 0);
-	};
-
-	const [page, setPage] = React.useState("islands");
-
-	return (
-		<React.Fragment>
-			<Background />
-			<div id="body">
-				{page === "islands" ? (
-					<Islands
-						setIsland={setIsland}
-						islandName={islandName}
-						setPage={setPage}
-						setFairySoul={setFairySoul}
-					/>
-				) : (
-					<FairySouls
-						setIsland={setIsland}
-						islandName={islandName}
-						setFairySoul={setFairySoul}
-						fairySouls={Object.keys(data[islandName])}
-						fairySoulIndex={fairySoulIndex}
-						fairySoulCount={fairySoulCount}
-						fairySoulName={fairySoulName}
-						fairySoulData={fairySoulData}
-						setPage={setPage}
-					/>
-				)}
-				<Footer />
-			</div>
-		</React.Fragment>
-	);
+function formatID(str) {
+	return str.replace(/[^0-9a-z]/gi, "");
 }
 
-export default animated(App);
+function formatImage(str) {
+	return `${str.replace(/ /gi, "-").replace(/[^-0-9a-z]/gi, "").toLowerCase()}.png`;
+}
+
+for (let i = 0; i < data.islands.length; i++) {
+	data.islands[i].id = formatID(
+		data.islands[i].name
+	);
+	data.islands[i].image = formatImage(
+		data.islands[i].name
+	);
+	for (let j = 0; j < data.islands[i].fairySouls.length; j++) {
+		data.islands[i].fairySouls[j].id = formatID(
+			data.islands[i].fairySouls[j].name
+		);
+	}
+}
+
+class App extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+
+	render() {
+		return (
+			<React.Fragment>
+				<Background />
+				<Router>
+					<Switch>
+						<Route exact path="/">
+							<HomePanel />
+						</Route>
+						{data.islands.map((island, index) => (
+							<Route
+								key={`island-panel-${index}`}
+								path={`/${island.id}`}
+							>
+								<IslandPanel island={island} />
+							</Route>
+						))}
+						<Route path="*">
+							<PageNotFound />
+						</Route>
+					</Switch>
+				</Router>
+				<Footer />
+			</React.Fragment>
+		);
+	}
+}
+
+export default App;

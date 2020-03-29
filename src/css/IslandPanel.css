@@ -1,0 +1,7 @@
+#island-panel {
+	display: grid;
+	height: calc(100vh - var(--footer-height));
+	overflow: hidden;
+	grid-template-columns: 375px auto;
+	z-index: 1;
+}

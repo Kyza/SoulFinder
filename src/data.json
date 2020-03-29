@@ -1,341 +1,412 @@
 {
-	"The Hub": {
-		"The Bank": {
-			"coords": {
-				"x": 0,
-				"y": 0,
-				"z": 0
-			},
-			"items": ["Grappling Hook", "Ender Pearl"],
-			"description": "Near the top of the gold pile on top of the bank."
+	"islands": [
+		{
+			"name": "The Hub",
+			"fairySouls": [
+				{
+					"name": "The Bank",
+					"coords": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"items": ["Grappling Hook", "Ender Pearl"],
+					"description": "Near the top of the gold pile on top of the bank."
+				},
+				{
+					"name": "The Mayor's House",
+					"coords": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"description": "Behind the flames in the fireplace."
+				}
+			]
 		},
-		"The Mayor's House": {
-			"coords": {
-				"x": 0,
-				"y": 0,
-				"z": 0
-			},
-			"description": "Behind the flames in the fireplace."
+		{
+			"name": "The Barn",
+			"fairySouls": [
+				{
+					"name": "East Aqueduct",
+					"coords": {
+						"x": 182,
+						"y": 99,
+						"z": -235
+					},
+					"description": "In the East Aqueduct."
+				},
+				{
+					"name": "Windmill 1",
+					"coords": {
+						"x": 96,
+						"y": 96,
+						"z": -287
+					},
+					"items": ["Ender Pearl"],
+					"description": "On the 3rd floor of the Windmill."
+				},
+				{
+					"name": "Windmill 2",
+					"coords": {
+						"x": 99,
+						"y": 112,
+						"z": -274
+					},
+					"items": ["Ender Pearl"],
+					"description": "On the sail of the Windmill."
+				},
+				{
+					"name": "Chimney",
+					"coords": {
+						"x": 96,
+						"y": 96,
+						"z": -287
+					},
+					"items": ["Grappling Hook", "Ender Pearl"],
+					"description": "Next to the front chimney on top of the barn."
+				},
+				{
+					"name": "East Mountains",
+					"coords": {
+						"x": 183,
+						"y": 99,
+						"z": -304
+					},
+					"description": "Behind the east mountains."
+				},
+				{
+					"name": "West Mountains",
+					"coords": {
+						"x": 157,
+						"y": 23,
+						"z": -202
+					},
+					"description": "Inside the water coming from the west mountain."
+				},
+				{
+					"name": "The Root",
+					"coords": {
+						"x": 157,
+						"y": 23,
+						"z": -202
+					},
+					"description": "At the lowest point of root at the south of the island."
+				}
+			]
+		},
+		{
+			"name": "Mushroom Desert",
+			"fairySouls": []
+		},
+		{
+			"name": "Gold Mine",
+			"fairySouls": []
+		},
+		{
+			"name": "Deep Caverns",
+			"fairySouls": []
+		},
+		{
+			"name": "Spider's Den",
+			"fairySouls": [
+				{
+					"name": "The Pit",
+					"coords": {
+						"x": -244,
+						"y": 71,
+						"z": -209
+					},
+					"description": "At the bottom of the obsidian and coal pit."
+				},
+				{
+					"name": "Gravel Quarry 1",
+					"coords": {
+						"x": -336,
+						"y": 81,
+						"z": -287
+					},
+					"description": "Above the stairs in the gravel quarry."
+				},
+				{
+					"name": "Gravel Quarry 2",
+					"coords": {
+						"x": -316,
+						"y": 87,
+						"z": -215
+					},
+					"description": "On the first level down of wooden slabs in the corner in the gravel quarry."
+				},
+				{
+					"name": "Bones 1",
+					"coords": {
+						"x": -341,
+						"y": 121,
+						"z": -198
+					},
+					"description": "On top of the rib bones near the southwest edge of the island."
+				},
+				{
+					"name": "Bones 2",
+					"coords": {
+						"x": -283,
+						"y": 89,
+						"z": -177
+					},
+					"description": "Inside a hidden room in the bones. Jump into a hole located at [-286, 94, -179], or jump onto the bone platform at [-276, 93, -180]."
+				},
+				{
+					"name": "Bones 3",
+					"coords": {
+						"x": -243,
+						"y": 89,
+						"z": -312
+					},
+					"description": "Under a quartz stair in the skull."
+				},
+				{
+					"name": "Bones 4",
+					"coords": {
+						"x": -176,
+						"y": 95,
+						"z": -337
+					},
+					"description": "On top of the rib bones near the northeast edge of the island."
+				},
+				{
+					"name": "The Floating Bush",
+					"coords": {
+						"x": -426,
+						"y": 85,
+						"z": -183
+					},
+					"description": "Walk over the barrier blocks at [-390, 84, -228]. The fairy soul is in the leaves floating over the void."
+				},
+				{
+					"name": "North Edge",
+					"coords": {
+						"x": -227,
+						"y": 73,
+						"z": -360
+					},
+					"description": "Off the north edge of the island."
+				},
+				{
+					"name": "Skeleton Cave",
+					"coords": {
+						"x": -216,
+						"y": 95,
+						"z": -337
+					},
+					"description": "Inside of the cave on the north edge of the island."
+				},
+				{
+					"name": "Edge Stairs",
+					"coords": {
+						"x": -152,
+						"y": 79,
+						"z": -343
+					},
+					"description": "On the right of a set of stairs leading off the edge of the island. Walk over the green wool."
+				}
+			]
+		},
+		{
+			"name": "Blazing Fortress",
+			"fairySouls": [
+				{
+					"name": "Northern Mountain",
+					"coords": {
+						"x": -373,
+						"y": 172,
+						"z": -682
+					},
+					"description": "On top of the northernmost mountain."
+				},
+				{
+					"name": "Bridge 1",
+					"coords": {
+						"x": -298,
+						"y": 75,
+						"z": -543
+					},
+					"description": "On the right of the bridge."
+				},
+				{
+					"name": "Bridge 2",
+					"coords": {
+						"x": -320,
+						"y": 78,
+						"z": -503
+					},
+					"description": "On the left of the bridge."
+				},
+				{
+					"name": "East Edge 1",
+					"coords": {
+						"x": -180,
+						"y": 90,
+						"z": -607
+					},
+					"description": "The easternmost edge of the island."
+				},
+				{
+					"name": "East Edge 2",
+					"coords": {
+						"x": -213,
+						"y": 62,
+						"z": -491
+					},
+					"description": "On barrier blocks east of the island."
+				},
+				{
+					"name": "West Edge",
+					"coords": {
+						"x": -431,
+						"y": 79,
+						"z": -563
+					},
+					"description": "At the westernmost edge of the island."
+				},
+				{
+					"name": "North Edge 1",
+					"coords": {
+						"x": -346,
+						"y": 133,
+						"z": -694
+					},
+					"description": "On the north edge of the island."
+				},
+				{
+					"name": "North Edge 2",
+					"coords": {
+						"x": -317,
+						"y": 203,
+						"z": -739
+					},
+					"description": "At the northernmost edge of the island."
+				},
+				{
+					"name": "The Tallest Roof",
+					"coords": {
+						"x": -308,
+						"y": 146,
+						"z": -426
+					},
+					"items": ["Grappling Hook", "Ender Pearl"],
+					"description": "On top of the highest doubled roof."
+				},
+				{
+					"name": "Top of the Mountain",
+					"coords": {
+						"x": -432,
+						"y": 208,
+						"z": -578
+					},
+					"items": ["Ender Pearl"],
+					"description": "At the top of the mountain."
+				},
+				{
+					"name": "In the Flames",
+					"coords": {
+						"x": -321,
+						"y": 139,
+						"z": -442
+					},
+					"items": ["Ender Pearl"],
+					"description": "Behind the flames of the middle hopper on the wall."
+				},
+				{
+					"name": "Edge of the Roof",
+					"coords": {
+						"x": -372,
+						"y": 136,
+						"z": -397
+					},
+					"items": ["Grappling Hook", "Ender Pearl"],
+					"description": "On the edge of the leftmost tower."
+				},
+				{
+					"name": "The Secret Room",
+					"coords": {
+						"x": -306,
+						"y": 107,
+						"z": -691
+					},
+					"description": "Go through the tunnel at [-305, 107, -704]."
+				},
+				{
+					"name": "Stairs",
+					"coords": {
+						"x": -312,
+						"y": 96,
+						"z": -401
+					},
+					"items": ["Pickaxe"],
+					"description": "Under the left of the staircase."
+				},
+				{
+					"name": "Glowstone",
+					"coords": {
+						"x": -385,
+						"y": 104,
+						"z": -461
+					},
+					"items": ["Grappling Hook", "Ender Pearl"],
+					"description": "Hidden among the glowstone pockets."
+				},
+				{
+					"name": "Lava River 1",
+					"coords": {
+						"x": -378,
+						"y": 119,
+						"z": -477
+					},
+					"items": ["Lava Resistance"],
+					"description": "In the lava."
+				},
+				{
+					"name": "Lava River 2",
+					"coords": {
+						"x": -335,
+						"y": 92,
+						"z": -446
+					},
+					"items": ["Lava Resistance"],
+					"description": "In the lava."
+				},
+				{
+					"name": "Lava Pool",
+					"coords": {
+						"x": -235,
+						"y": 85,
+						"z": -591
+					},
+					"items": ["Lava Resistance", "Pickaxe"],
+					"description": "Under the lower block in the pool."
+				},
+				{
+					"name": "The Lever Hole",
+					"coords": {
+						"x": -311,
+						"y": 39,
+						"z": -676
+					},
+					"description": "Flip the lever at [-307, 113, -675] and go down the hole to the left."
+				}
+			]
+		},
+		{
+			"name": "The End",
+			"fairySouls": []
+		},
+		{
+			"name": "The Park",
+			"fairySouls": []
+		},
+		{
+			"name": "Winter Island",
+			"fairySouls": []
 		}
-	},
-	"The Barn": {
-		"East Aqueduct": {
-			"coords": {
-				"x": 182,
-				"y": 99,
-				"z": -235
-			},
-			"description": "In the East Aqueduct."
-		},
-		"Windmill 1": {
-			"coords": {
-				"x": 96,
-				"y": 96,
-				"z": -287
-			},
-			"items": ["Ender Pearl"],
-			"description": "On the 3rd floor of the Windmill."
-		},
-		"Windmill 2": {
-			"coords": {
-				"x": 99,
-				"y": 112,
-				"z": -274
-			},
-			"items": ["Ender Pearl"],
-			"description": "On the sail of the Windmill."
-		},
-		"Chimney": {
-			"coords": {
-				"x": 96,
-				"y": 96,
-				"z": -287
-			},
-			"items": ["Grappling Hook", "Ender Pearl"],
-			"description": "Next to the front chimney on top of the barn."
-		},
-		"East Mountains": {
-			"coords": {
-				"x": 183,
-				"y": 99,
-				"z": -304
-			},
-			"description": "Behind the east mountains."
-		},
-		"West Mountains": {
-			"coords": {
-				"x": 157,
-				"y": 23,
-				"z": -202
-			},
-			"description": "Inside the water coming from the west mountain."
-		},
-		"The Root": {
-			"coords": {
-				"x": 157,
-				"y": 23,
-				"z": -202
-			},
-			"description": "At the lowest point of root at the south of the island."
-		}
-	},
-	"Mushroom Desert": {},
-	"Gold Mine": {},
-	"Deep Caverns": {},
-	"Spider's Den": {
-		"The Pit": {
-			"coords": {
-				"x": -244,
-				"y": 71,
-				"z": -209
-			},
-			"description": "At the bottom of the obsidian and coal pit."
-		},
-		"Gravel Quarry 1": {
-			"coords": {
-				"x": -336,
-				"y": 81,
-				"z": -287
-			},
-			"description": "Above the stairs in the gravel quarry."
-		},
-		"Gravel Quarry 2": {
-			"coords": {
-				"x": -316,
-				"y": 87,
-				"z": -215
-			},
-			"description": "On the first level down of wooden slabs in the corner in the gravel quarry."
-		},
-		"Bones 1": {
-			"coords": {
-				"x": -341,
-				"y": 121,
-				"z": -198
-			},
-			"description": "On top of the rib bones near the southwest edge of the island."
-		},
-		"Bones 2": {
-			"coords": {
-				"x": -283,
-				"y": 89,
-				"z": -177
-			},
-			"description": "Inside a hidden room in the bones. Jump into a hole located at [-286, 94, -179], or jump onto the bone platform at [-276, 93, -180]."
-		},
-		"Bones 3": {
-			"coords": {
-				"x": -243,
-				"y": 89,
-				"z": -312
-			},
-			"description": "Under a quartz stair in the skull."
-		},
-		"Bones 4": {
-			"coords": {
-				"x": -176,
-				"y": 95,
-				"z": -337
-			},
-			"description": "On top of the rib bones near the northeast edge of the island."
-		},
-		"The Floating Bush": {
-			"coords": {
-				"x": -426,
-				"y": 85,
-				"z": -183
-			},
-			"description": "Walk over the barrier blocks at [-390, 84, -228]. The fairy soul is in the leaves floating over the void."
-		},
-		"North Edge": {
-			"coords": {
-				"x": -227,
-				"y": 73,
-				"z": -360
-			},
-			"description": "Off the north edge of the island."
-		},
-		"Skeleton Cave": {
-			"coords": {
-				"x": -216,
-				"y": 95,
-				"z": -337
-			},
-			"description": "Inside of the cave on the north edge of the island."
-		},
-		"Edge Stairs": {
-			"coords": {
-				"x": -152,
-				"y": 79,
-				"z": -343
-			},
-			"description": "On the right of a set of stairs leading off the edge of the island. Walk over the green wool."
-		}
-	},
-	"Blazing Fortress": {
-		"Northern Mountain": {
-			"coords": {
-				"x": -373,
-				"y": 172,
-				"z": -682
-			},
-			"description": "On top of the northernmost mountain."
-		},
-		"Bridge 1": {
-			"coords": {
-				"x": -298,
-				"y": 75,
-				"z": -543
-			},
-			"description": "On the right of the bridge."
-		},
-		"Bridge 2": {
-			"coords": {
-				"x": -320,
-				"y": 78,
-				"z": -503
-			},
-			"description": "On the left of the bridge."
-		},
-		"East Edge 1": {
-			"coords": {
-				"x": -180,
-				"y": 90,
-				"z": -607
-			},
-			"description": "The easternmost edge of the island."
-		},
-		"East Edge 2": {
-			"coords": {
-				"x": -213,
-				"y": 62,
-				"z": -491
-			},
-			"description": "On barrier blocks east of the island."
-		},
-		"West Edge": {
-			"coords": {
-				"x": -431,
-				"y": 79,
-				"z": -563
-			},
-			"description": "At the westernmost edge of the island."
-		},
-		"North Edge 1": {
-			"coords": {
-				"x": -346,
-				"y": 133,
-				"z": -694
-			},
-			"description": "On the north edge of the island."
-		},
-		"North Edge 2": {
-			"coords": {
-				"x": -317,
-				"y": 203,
-				"z": -739
-			},
-			"description": "At the northernmost edge of the island."
-		},
-		"The Tallest Roof": {
-			"coords": {
-				"x": -308,
-				"y": 146,
-				"z": -426
-			},
-			"items": ["Grappling Hook", "Ender Pearl"],
-			"description": "On top of the highest doubled roof."
-		},
-		"Top of the Mountain": {
-			"coords": {
-				"x": -432,
-				"y": 208,
-				"z": -578
-			},
-			"items": ["Ender Pearl"],
-			"description": "At the top of the mountain."
-		},
-		"In the Flames": {
-			"coords": {
-				"x": -321,
-				"y": 139,
-				"z": -442
-			},
-			"items": ["Ender Pearl"],
-			"description": "Behind the flames of the middle hopper on the wall."
-		},
-		"Edge of the Roof": {
-			"coords": {
-				"x": -372,
-				"y": 136,
-				"z": -397
-			},
-			"items": ["Grappling Hook", "Ender Pearl"],
-			"description": "On the edge of the leftmost tower."
-		},
-		"The Secret Room": {
-			"coords": {
-				"x": -306,
-				"y": 107,
-				"z": -691
-			},
-			"description": "Go through the tunnel at [-305, 107, -704]."
-		},
-		"Stairs": {
-			"coords": {
-				"x": -312,
-				"y": 96,
-				"z": -401
-			},
-			"items": ["Pickaxe"],
-			"description": "Under the left of the staircase."
-		},
-		"Glowstone": {
-			"coords": {
-				"x": -385,
-				"y": 104,
-				"z": -461
-			},
-			"items": ["Grappling Hook", "Ender Pearl"],
-			"description": "Hidden among the glowstone pockets."
-		},
-		"Lava River 1": {
-			"coords": {
-				"x": -378,
-				"y": 119,
-				"z": -477
-			},
-			"items": ["Lava Resistance"],
-			"description": "In the lava."
-		},
-		"Lava River 2": {
-			"coords": {
-				"x": -335,
-				"y": 92,
-				"z": -446
-			},
-			"items": ["Lava Resistance"],
-			"description": "In the lava."
-		},
-		"Lava Pool": {
-			"coords": {
-				"x": -235,
-				"y": 85,
-				"z": -591
-			},
-			"items": ["Lava Resistance", "Pickaxe"],
-			"description": "Under the lower block in the pool."
-		},
-		"The Lever Hole": {
-			"coords": {
-				"x": -311,
-				"y": 39,
-				"z": -676
-			},
-			"description": "Flip the lever at [-307, 113, -675] and go down the hole to the left."
-		}
-	},
-	"The End": {},
-	"The Park": {},
-	"Jerry's Workshop": {}
+	]
 }
